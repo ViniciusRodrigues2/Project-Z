@@ -32,28 +32,28 @@ body{
 .Project-head .logo img{
     width: 100%;
 }
-.Project-head .menu-nav .menu{
+.Project-head .menu-nav{
     display: flex;
-    gap: .65em;
-    list-style: none;
-    max-width: 50%;
-    padding-top: 1.5em;
-    margin-left: 2em;
-    /* background-color: black; */
+    align-items: center;
+    margin-top: .75em;
+    margin-right: 4em;
+    gap: 4px;
 }
-.Project-head .menu-nav .menu li a{
+.Project-head .menu-nav  .item-1{
     cursor: pointer;
-
 }
-.Project-head .menu-nav .menu li a img{
-    width: 100%;
+.Project-head .menu-nav  .item-1 a img{
+    width: 40px;
+}
+.Project-head .menu-nav  .item-2 a img{
+    width: 40px;
 }
 .conteudo-project{
     width: 100%;
     height: 100vh;
 }
 .conteudo-project .video-project{
-    padding: 2.5em;
+    padding: 0 1.6em;
     margin: 0 15px;
 }
 .conteudo-project .video-project .video
@@ -134,7 +134,7 @@ span{
     display: flex;
     align-items: center;
     text-align: center;
-    max-width: 1200px;
+    max-width: 1300px;
     position: relative;
     overflow: hidden;
 }
@@ -186,7 +186,7 @@ span{
     text-transform: uppercase;
 }
 .conteudo-project .card-project .card-project-info .buttons .btns img{
-    width: 300px;
+    width: 280px;
 }
 .conteudo-project .card-project .card-project-info .buttons .more-inf{
     max-width: 200px;
@@ -204,6 +204,26 @@ span{
     width: 450px;
 }
 @media screen and (max-width:800px) {
+    .Project-head .logo{
+        margin-left: 0;
+        max-width: 200px;
+    }
+    .Project-head .menu-nav{
+        display: flex;
+        align-items: center;
+        margin-top: .75em;
+        margin-right: 1em;
+        gap: 4px;
+    }
+    .Project-head .menu-nav  .item-1{
+        cursor: pointer;
+    }
+    .Project-head .menu-nav  .item-1 a img{
+        width: 35px;
+    }
+    .Project-head .menu-nav  .item-2 a img{
+        width: 35px;
+    }
     .conteudo-project .video-project .video{
         max-width: 100%;
         top: 30px;
@@ -237,6 +257,7 @@ span{
         display: flex;
         flex-direction: column;
         align-content: center;
+        justify-content: center;
     }
     .conteudo-project .card-project .card-project-info .buttons .more-inf{
         position: absolute;
