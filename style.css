@@ -204,13 +204,9 @@ span{
     width: 450px;
 }
 @media screen and (max-width:800px) {
-    .Project-head{
-        position: fixed;
-        z-index: 10000;
-    }
     .conteudo-project .video-project .video{
         max-width: 100%;
-        top: 80px;
+        top: 30px;
     }
     .conteudo-project .video-project .video video{
         width: 100%;
@@ -224,7 +220,12 @@ span{
     .conteudo-project .card-project .card-project-info .project-img{
         padding: 0;
         display: block;
-        margin: 5em 0 auto;
+        margin: 1.3em auto;
+        text-align: center;
+        max-width: 380px;
+    }
+    .conteudo-project .card-project .card-project-info .project-img img{
+        width: 100%;
     }
     .conteudo-project .card-project .card-project-info .column-project{
         display: block;
