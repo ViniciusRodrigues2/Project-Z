@@ -1,0 +1,244 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: #0A011A;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.Project-head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0A011A;
+    /* background-color: red; */
+    height: 12vh;
+}
+.Project-head .logo{
+    display: block;
+    max-width: 260px;
+    cursor: pointer;
+    align-content: center;
+    margin-top: .75em;
+    margin-left: 1.2em;
+    /* background-color: black; */
+}
+.Project-head .logo img{
+    width: 100%;
+}
+.Project-head .menu-nav .menu{
+    display: flex;
+    gap: .65em;
+    list-style: none;
+    max-width: 50%;
+    padding-top: 1.5em;
+    margin-left: 2em;
+    /* background-color: black; */
+}
+.Project-head .menu-nav .menu li a{
+    cursor: pointer;
+
+}
+.Project-head .menu-nav .menu li a img{
+    width: 100%;
+}
+.conteudo-project{
+    width: 100%;
+    height: 100vh;
+}
+.conteudo-project .video-project{
+    padding: 2.5em;
+    margin: 0 15px;
+}
+.conteudo-project .video-project .video
+span{
+    position: absolute;
+    display: block;
+}
+.conteudo-project .video-project .video span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg,transparent,rgb(85, 186, 219));
+    animation: animate1 2s linear infinite;
+    animation-delay: 0s;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.conteudo-project .video-project .video span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(270deg,transparent,rgb(205, 25, 205));
+    animation: animate3 2s linear infinite;
+    animation-delay: 1s;
+    z-index: 1000;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+.conteudo-project .video-project .video span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,rgb(104, 86, 239));
+    animation: animate2 2s linear infinite;
+    animation-delay: 0.5s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.conteudo-project .video-project .video span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,rgb(226, 181, 47));
+    animation: animate4 2s linear infinite;
+    animation-delay: 1.5s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+.conteudo-project .video-project .video{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    overflow: hidden;
+}
+.conteudo-project .video-project .video video{
+    width: 100%;
+}
+
+.conteudo-project .card-project{
+    display: flex;
+}
+.conteudo-project .card-project .card-project-info{
+    display: flex;
+    align-items: center;
+}
+.conteudo-project .card-project .card-project-info .buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conteudo-project .card-project .card-project-info .column-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: blue; */
+    position: relative;
+    margin-left: 3em;
+    margin-top: 4em;
+}
+.conteudo-project .card-project .card-project-info .column-project .content-z{
+    display: block;
+    text-align: left;
+    margin-right: -1.5em;
+    padding-left: 1.3em;
+    width: 100%;
+    /* background-color: red; */
+}
+.conteudo-project .card-project .card-project-info .column-project .content-z p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    font-size: 1.8em;
+    font-weight: 500;
+    width: 100%;
+}
+.conteudo-project .card-project .card-project-info .column-project .content-z p span{
+    font-weight: 800;
+}
+.conteudo-project .card-project .card-project-info .column-project .content-z p span:nth-child(1){
+    text-transform: uppercase;
+}
+.conteudo-project .card-project .card-project-info .buttons .btns img{
+    width: 300px;
+}
+.conteudo-project .card-project .card-project-info .buttons .more-inf{
+    max-width: 200px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.conteudo-project .card-project .card-project-info .buttons .more-inf img{
+    width: 100%;
+}
+.conteudo-project .card-project .card-project-info .project-img{
+    padding-left: 8em;
+}
+.conteudo-project .card-project .card-project-info .project-img img{
+    width: 450px;
+}
+@media screen and (max-width:800px) {
+    .Project-head{
+        position: fixed;
+        z-index: 10000;
+    }
+    .conteudo-project .video-project .video{
+        max-width: 100%;
+        top: 80px;
+    }
+    .conteudo-project .video-project .video video{
+        width: 100%;
+    }
+    .conteudo-project .video-project{
+        padding: 0;
+    }
+    .conteudo-project .card-project .card-project-info{
+        flex-wrap: wrap;
+    }
+    .conteudo-project .card-project .card-project-info .project-img{
+        padding: 0;
+        display: block;
+        margin: 5em 0 auto;
+    }
+    .conteudo-project .card-project .card-project-info .column-project{
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    .conteudo-project .card-project .card-project-info .buttons .btns{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+    .conteudo-project .card-project .card-project-info .buttons .more-inf{
+        position: absolute;
+       left: 8em;
+    }
+}
