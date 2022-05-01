@@ -49,7 +49,7 @@ body{
 }
 .conteudo-project{
     width: 100%;
-    height: 160vh;
+    height: 100%;
 }
 .conteudo-project .video-project{
     padding: 0 1.6em;
@@ -191,7 +191,7 @@ span{
 .conteudo-project .card-project .card-project-info .buttons .more-inf{
     max-width: 200px;
     position: absolute;
-    left: 0;
+    left: 20%;
     bottom: 0;
 }
 .conteudo-project .card-project .card-project-info .buttons .more-inf img{
@@ -203,36 +203,6 @@ span{
 }
 .conteudo-project .card-project .card-project-info .project-img img{
     width: 450px;
-}
-/* style Footer project-Z */
-.rodape{
-   display: flex;
-   width: 100vw;
-   background-color: white;
-   position: relative;
-   top: 100%;
-   height: 10vh;
-   align-items: center;
-   justify-content: center;
-}
-.rodape .space-z{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 6em;
-}
-.rodape .space-z a{
-    text-decoration: none;
-    color: #0A011A;
-    font-size: .85em;
-    transition: all .3s ease-in-out;
-}
-.rodape .space-z a:hover{
-    color: rgb(37, 170, 223);
-}
-.rodape .space-z p{
-    font-size: .75em;
-    color: rgb(188, 188, 188);
 }
 @media screen and (max-width:800px) {
     .Project-head .logo{
@@ -292,32 +262,14 @@ span{
     }
     .conteudo-project .card-project .card-project-info .buttons .more-inf{
         position: absolute;
-       left: 8em;
+        left: 13em;
+        top:30em;
     }
 }
-@media screen and (max-width:960px) {
-    .conteudo-project{
-        height: 180vh;
-    }
-    .rodape{
-        top: 100%;
-        height: 150px;
-    }
-    .rodape .space-z{
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 15px;
-    }
-}
-@media screen and (max-width:600px){
-    .conteudo-project{
-        height: 130vh;
-    }
+@media screen and (max-width:480px) {
     .conteudo-project .card-project .card-project-info .buttons .more-inf{
-        max-width: 200px;
-        position: absolute;
-        left: 20%;
-        bottom: 0;
+        position: sticky;
+        margin-right: 6.5em;
+
     }
 }
